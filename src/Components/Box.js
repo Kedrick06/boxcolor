@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-export default class Box extends React.Component{
+class Box extends React.Component{
 
   constructor(props){
-    super(props);
-    this.state = { color:"blue" };
+    super(props)
+
+    this.state = { color:"orange" };
     this.changeColor = this.changeColor.bind(this);
   }
 
@@ -27,3 +28,4 @@ export default class Box extends React.Component{
   }
 }
 
+export default Box;
