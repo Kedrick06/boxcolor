@@ -5,6 +5,8 @@
 .div{
   width:900px;
   height: 900px;
+  display:flex;
+  flex-direction: column;
 
 }
 .button{
