@@ -24,6 +24,7 @@ class Box extends React.Component{
       <body className="div" style={{backgroundColor: this.state.color}}>
       <button className="button" onClick={this.changeColor}>Click this</button>
       </body>
+    
     )
   }
 }
