@@ -7,13 +7,14 @@ class Box extends React.Component{
     super(props)
 
     this.state = { color:"orange" };
-    this.changeColor = this.changeColor.bind(this);
+    this.colorMix = this.changeColor.bind(this);
   }
 
   changeColor(){
   let red = Math.floor(Math.random()*255)
   let green = Math.floor(Math.random()*255)
   let blue =  Math.floor(Math.random()*255)
+  
   console.log(this.state.color)
   this.setState({color:`rgb(${red},${green},${blue})`})
   }
@@ -21,8 +22,7 @@ class Box extends React.Component{
   render(){
     return(
       <body className="div" style={{backgroundColor: this.state.color}}>
-      <h1>Changed color</h1>
-      <button className="button" onClick={this.changeColor}>CHANGE MY COLOR</button>
+      <button className="button" onClick={this.changeColor}>Click this</button>
       </body>
     )
   }
